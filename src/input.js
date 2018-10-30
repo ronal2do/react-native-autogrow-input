@@ -43,6 +43,12 @@ export default class AutogrowInput extends PureComponent {
       this.inputRef.focus();
     }
   }
+  
+  blur = () => {
+    if (this.inputRef && this.inputRef.blur) {
+      this.inputRef.blur();
+    }
+  }
 
   render() {
     return (
